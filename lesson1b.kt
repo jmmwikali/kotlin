@@ -14,5 +14,5 @@ fun main() {
     println(name)
 }
 
-// Create a file call it assignment1.kt -> create an addition and subtraction program inside the said file.
+
 // Research on conditional statements in kotlin
