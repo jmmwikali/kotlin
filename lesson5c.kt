@@ -9,7 +9,7 @@ open class Animal {
         println("The animal can walk")
     }
 
-    fun sleep() {
+    open fun sleep() {
         println("The animal can sleep")
     }
 }
@@ -19,14 +19,20 @@ class Dog : Animal() {
     fun bark() {
         println("The dog likes barking...")
     }
+
+    override fun sleep() {
+        println("The dog is sleeping")
+    }
 }
  
 fun main() {
     // Create an object
     var myDog = Dog()
+    var myAnimal = Animal()
 
     // Accessing the behaviours of a dog
     myDog.bark()
+    myAnimal.sleep()
     myDog.sleep()
     myDog.walk()
 }

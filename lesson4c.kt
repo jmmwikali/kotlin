@@ -13,12 +13,14 @@ fun main(args: Array<String>) {
 
     println("=========================")
     // Below is an example of a function that is able to calculate the BMI of a person
-    fun BMI(weight: Double, height: Double) {
-        val answer = weight / (height * height)
+    fun BMI(weight: Number, height: Number) {
+        val w = weight.toDouble()
+        val h = height.toDouble()
+        val answer = w / (h * h)
         println("The BMI of the person is: "+ answer)
     }
 
-    BMI(60.4, 1.5)
+    BMI(60, 1)
     BMI(53.6, 1.0)
 
     println("===========================")
