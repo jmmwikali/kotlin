@@ -15,7 +15,7 @@ class BankAccount {
 // INHERITANCE
 // DATA ABSTRACTION - Defining a function without fully implementing it
 abstract class Animal {
-    abstract fun sound()   // no body → no implementation
+    abstract fun sound()   // no body -> no implementation
 }
 
 // Implementation on child classes
@@ -49,6 +49,7 @@ fun main() {
     val account = BankAccount()
     account.deposit(1000)
     println("Bank balance: ${account.getBalance()}")  // prints: Bank balance: 1000
+    // println(account.balance) //Error message - var balance: Int': it is private in 'BankAccount'
 
     // Abstraction example
     val dog = Dog()
